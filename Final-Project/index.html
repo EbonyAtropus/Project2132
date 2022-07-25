@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Final Project</title>
+
+    <link rel="stylesheet" href="css/allstyles.css">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
+    <script src="script/ebonyscript.js" defer></script>
+
+</head>
+<body>
+<header>
+<h1>Dice Against The Demon</h1>
+</header>
+<hr>
+<div class="row">
+<div class="you">
+    <h3>You</h3>
+    <div class="dice1">
+        <img src="images/Dice-1.png" alt="dice1" width="100">
+        
+    </div>
+    <div class="dice2">
+        <img src="images/Dice-1.png" alt="dice2" width="100">
+    </div>
+    <div><label>Score</label></div>
+    <div id="youScore"></div>
+</div>
+<div class="demon">
+    <h3>Demon</h3>
+    <div class="dice3">
+        <img src="images/Dice-1.png" alt="dice3" width="100">
+    </div>
+    <div class="dice4">
+        <img src="images/Dice-1.png" alt="dice4" width="100">
+    </div>
+    <div><label>Score</label></div>
+    <div id="demonScore"></div>
+</div>
+</div>
+
+<button class="rollbutton" id="rollbutton" onclick="rollButton">Roll!</button>
+<a href="index.html">
+<button class="newbutton" id="newbutton">New Game</button>
+</a>
+
+
+
+<button class="rulesButton" id="rulesbutton" onclick="myPopup()">Rules
+    <span class="rules" id="rules"><p>
+        - If any of the players two dice comes up as a 1 then the score for that round for the player
+        is 0. eg: if the player rolls a 6 and 1, they get a score of 0
+        - If the player rolls a pair of the same numbers then the players score is the total of the
+        two dice times 2. eg: if he player rolls 5 and 5, they get a score of (5+5)*2=20
+        - If the player rolls any other combination of dice other than the ones mentioned above
+        then the players score is the total value of the two dice, eg: player rolls a 3 and 2, player
+        gets a score of 3+2=5
+    </p>
+</span>
+</button>
+
+<div class="win" id="win">
+   <h1>You Win!!!</h1> 
+</div>
+
+<div class="lose" id="lose">
+    <h1>You Lose!!!</h1>
+</div>
+
+
+<footer>
+
+</footer>
+</body>
